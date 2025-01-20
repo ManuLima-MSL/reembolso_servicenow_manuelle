@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Request Refund">64bae15083571210889d5e20ceaad39a</catalog_item>
+        <catalog_variable>IO:149ded1483571210889d5e20ceaad38b</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 16:45:22</sys_created_on>
+        <sys_id>3dcee1d483571210889d5e20ceaad356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>date</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_3dcee1d483571210889d5e20ceaad356</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 16:45:22</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Refund Defult mandatory fields ">db7eed9483571210889d5e20ceaad381</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>date</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=3dcee1d483571210889d5e20ceaad356"/>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_mtom">
+    <sc_cat_item_user_criteria_mtom action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Request Refund">64bae15083571210889d5e20ceaad39a</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 16:43:48</sys_created_on>
+        <sys_id>722e299483571210889d5e20ceaad3a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request Refund.Refund Requesters</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_mtom_722e299483571210889d5e20ceaad3a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 16:43:48</sys_updated_on>
+        <user_criteria display_value="Refund Requesters">af3ea99483571210889d5e20ceaad333</user_criteria>
+    </sc_cat_item_user_criteria_mtom>
+</record_update>
