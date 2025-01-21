@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Request Refund">64bae15083571210889d5e20ceaad39a</cat_item>
+        <cat_variable>IO:149ded1483571210889d5e20ceaad38b</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Date</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue === '') {
+        return; // Sai da função se o formulário estiver carregando ou se o valor for vazio
+    }
+  
+    var arr_data = newValue.split("/"); 
+
+    if (arr_data.length !== 3) {
+        g_form.addErrorMessage("Invalid date format. Please use 'DD MMM YYYY'.");
+        g_form.setValue("date", ""); 
+        return;
+    }
+
+    var formattedDate = `${arr_data[2]} + "-" +${arr_data[1]} + "-" + ${arr_data[0]}`; 
+
+    
+    var selectedDate = new Date(formattedDate);
+    var currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0); 
+
+    if (selectedDate.getTime() > currentDate.getTime()) {
+        g_form.addErrorMessage("The selected date cannot be in the future. Please select a valid date.");
+        g_form.setValue("date", ""); 
+        g_form.clearMessages(); 
+	}
+}
+]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 16:14:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8f5feee4835f5210889d5e20ceaad3ae</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Validate Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>catalog_script_client_8f5feee4835f5210889d5e20ceaad3ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 18:06:20</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>8f5feee4835f5210889d5e20ceaad3ae</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 16:14:56</sys_created_on>
+        <sys_id>3561fee4835f5210889d5e20ceaad3c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 16:14:56</sys_updated_on>
+        <table>catalog_script_client</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
