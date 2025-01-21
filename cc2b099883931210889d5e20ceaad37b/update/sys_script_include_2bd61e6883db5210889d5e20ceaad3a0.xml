@@ -2,47 +2,51 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
-        <api_name>x_1593183_reembo_0.CategoryAccessUtils</api_name>
+        <api_name>x_1593183_reembo_0.GroupAccessValidator</api_name>
         <caller_access/>
         <client_callable>false</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
-        <name>CategoryAccessUtils</name>
+        <name>GroupAccessValidator</name>
         <sandbox_callable>false</sandbox_callable>
-        <script><![CDATA[var CategoryAccessUtils = Class.create();
-CategoryAccessUtils.prototype = {
-    initialize: function() {
-    },
-	userHasAccessToCategory: function(userId, categoryId) {
-        
-        var grCategory = new GlideRecord('x_1593183_reembo_0_categories'); 
-        if (grCategory.get(categoryId)) {
-            var groupId = grCategory.grupo_responsavel; 
+        <script><![CDATA[var GroupAccessValidator = Class.create();
+GroupAccessValidator.prototype = {
+    initialize: function() {},
+
+    canAccessRecord: function(userId, categoryId) {
+        // Consulta o grupo associado à categoria
+        var categoryRecord = new GlideRecord('x_1593183_reembo_0_categories'); 
+        if (categoryRecord.get(categoryId)) { // Verifica se a categoria existe
+            var groupId = categoryRecord.group.sys_id; // Obtém o grupo associado à categoria
             
-            
-            var grGroup = new GlideRecord('sys_user_grmember');
-            grGroup.addQuery('group', groupId);
-            grGroup.addQuery('user', userId);
-            grGroup.query();
-            
-            return grGroup.hasNext(); 
+            // Verifica se o usuário pertence ao grupo
+            var userGroup = new GlideRecord('sys_user_grmember');
+            userGroup.addQuery('user', userId);
+            userGroup.addQuery('group', groupId);
+            userGroup.query();
+
+            var answer = userGroup.hasNext(); // Retorna true se o usuário pertence ao grupo
+            return answer;
         }
-        return false; 
+
+        return false; // Retorna false se a categoria não tiver grupo ou não existir
     },
-    type: 'CategoryAccessUtils'
-};]]></script>
+
+    type: 'GroupAccessValidator'
+};
+]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-21 14:24:58</sys_created_on>
         <sys_id>2bd61e6883db5210889d5e20ceaad3a0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>CategoryAccessUtils</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>GroupAccessValidator</sys_name>
         <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
         <sys_update_name>sys_script_include_2bd61e6883db5210889d5e20ceaad3a0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-21 14:29:07</sys_updated_on>
+        <sys_updated_on>2025-01-21 21:01:07</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>2bd61e6883db5210889d5e20ceaad3a0</id>
