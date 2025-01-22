@@ -18,31 +18,32 @@
         <name>Validate Date</name>
         <order/>
         <published_ref/>
-        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-    if (isLoading || newValue === '') {
-        return; // Sai da função se o formulário estiver carregando ou se o valor for vazio
-    }
-  
-    var arr_data = newValue.split("/"); 
-
-    if (arr_data.length !== 3) {
-        g_form.addErrorMessage("Invalid date format. Please use 'DD MMM YYYY'.");
-        g_form.setValue("date", ""); 
+        <script><![CDATA[function onChange(control, oldValue, newValue) {
+    if (newValue === "") {
         return;
     }
-
-    var formattedDate = `${arr_data[2]} + "-" +${arr_data[1]} + "-" + ${arr_data[0]}`; 
-
+ 
     
-    var selectedDate = new Date(formattedDate);
-    var currentDate = new Date();
-    currentDate.setHours(0, 0, 0, 0); 
-
-    if (selectedDate.getTime() > currentDate.getTime()) {
+    var arr_data = newValue.split("/"); 
+ 
+    
+    var day = parseInt(arr_data[0], 10);
+    var month = parseInt(arr_data[1], 10) - 1;
+    var year = parseInt(arr_data[2], 10);
+ 
+    
+    var selectedDate = new Date(year, month, day);
+ 
+    var today = new Date();
+ 
+    if (selectedDate > today) {
         g_form.addErrorMessage("The selected date cannot be in the future. Please select a valid date.");
-        g_form.setValue("date", ""); 
-        g_form.clearMessages(); 
-	}
+        g_form.setValue("date", "");
+    } else {
+        g_form.clearMessages();
+    }
+ 
+ 
 }
 ]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -51,7 +52,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f5feee4835f5210889d5e20ceaad3ae</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>Validate Date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
@@ -59,7 +60,7 @@
         <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
         <sys_update_name>catalog_script_client_8f5feee4835f5210889d5e20ceaad3ae</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-21 18:06:20</sys_updated_on>
+        <sys_updated_on>2025-01-22 13:16:10</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
