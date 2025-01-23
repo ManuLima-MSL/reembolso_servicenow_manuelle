@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>assignment_group</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:23:49</sys_created_on>
+        <sys_id>4e7d79d9835b1210889d5e20ceaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assignment_group</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_4e7d79d9835b1210889d5e20ceaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:23:49</sys_updated_on>
+        <table>x_1593183_reembo_0_refund</table>
+        <ui_policy display_value="Shows fields wehn state is not requested">eeecbd99835b1210889d5e20ceaad30b</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=4e7d79d9835b1210889d5e20ceaad340"/>
+</record_update>

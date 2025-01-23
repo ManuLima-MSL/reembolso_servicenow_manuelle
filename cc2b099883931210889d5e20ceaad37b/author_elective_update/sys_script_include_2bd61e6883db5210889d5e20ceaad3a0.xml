@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1593183_reembo_0.GroupAccessValidator</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GroupAccessValidator</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GroupAccessValidator = Class.create();
+GroupAccessValidator.prototype = {
+    initialize: function() {},
+
+    getAccessibleRecords: function(current) {
+        var accessibleRecords = []; 
+
+        var assignmentGroup = current.assignment_group;
+
+        var userGroups = gs.getUser().getMyGroups();
+
+        if (assignmentGroup && userGroups.indexOf(assignmentGroup.sys_id) !== -1) {
+            accessibleRecords.push(current.sys_id.toString()); 
+        }
+
+        return accessibleRecords;
+    },
+
+    type: 'GroupAccessValidator'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 14:24:58</sys_created_on>
+        <sys_id>2bd61e6883db5210889d5e20ceaad3a0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>GroupAccessValidator</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>sys_script_include_2bd61e6883db5210889d5e20ceaad3a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 16:53:05</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>2bd61e6883db5210889d5e20ceaad3a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 14:24:57</sys_created_on>
+        <sys_id>6e38da6883db5210889d5e20ceaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 14:24:57</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</application>
+        <file_path/>
+        <instance_id>f5cdcc2bdbb84e98ebdd2a5913961933</instance_id>
+        <instance_name>dev241981</instance_name>
+        <name>sys_script_include_2bd61e6883db5210889d5e20ceaad3a0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1593183_reembo_0.GroupAccessValidator&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GroupAccessValidator&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GroupAccessValidator = Class.create();
+GroupAccessValidator.prototype = {
+    initialize: function() {},
+
+    getAccessibleRecords: function(current) {
+        var accessibleRecords = []; 
+
+        var assignmentGroup = current.assignment_group;
+
+        var userGroups = gs.getUser().getMyGroups();
+
+        if (assignmentGroup &amp;&amp; userGroups.indexOf(assignmentGroup.sys_id) !== -1) {
+            accessibleRecords.push(current.sys_id.toString()); 
+        }
+
+        return accessibleRecords;
+    },
+
+    type: 'GroupAccessValidator'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-21 14:24:58&lt;/sys_created_on&gt;&lt;sys_id&gt;2bd61e6883db5210889d5e20ceaad3a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;GroupAccessValidator&lt;/sys_name&gt;&lt;sys_package display_value="Reembolso" source="x_1593183_reembo_0"&gt;cc2b099883931210889d5e20ceaad37b&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Reembolso"&gt;cc2b099883931210889d5e20ceaad37b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_2bd61e6883db5210889d5e20ceaad3a0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-22 16:53:05&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;2bd61e6883db5210889d5e20ceaad3a0&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-21 14:24:57&lt;/sys_created_on&gt;&lt;sys_id&gt;6e38da6883db5210889d5e20ceaad349&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-21 14:24:57&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1187194429</payload_hash>
+        <record_name>GroupAccessValidator</record_name>
+        <reverted_from/>
+        <source>ecbf01dc83931210889d5e20ceaad3e1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 16:53:05</sys_created_on>
+        <sys_id>1ab3cc4183971210889d5e20ceaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948eee8c800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 16:53:05</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>9eb3cc41fe97121010d0008af19d1658</update_guid>
+        <update_guid_history>9eb3cc41fe97121010d0008af19d1658:-1187194429,a45384416e97121064861fe09ac7f6ee:-54612798,25f0c00d21571210989fbfc0a72043bc:-2105486012,866ebf783757121051990a3f8316a6f3:716660178,405d533448d31210b82e44643db884df:725741383,fde2b72c3f9392108b7587a21d1af387:-1019601121,af29d6e898db5210b633605daa28a7f5:-318026380,814896e80cdb52107eb160d199439d8e:1605708499,873896e818db5210ff76728a76ae1389:1612376260</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:25:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1089697d21044d9c9201d07bbc325890</sys_id>
+        <sys_metadata>2bd61e6883db5210889d5e20ceaad3a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GroupAccessValidator</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_scope_delete display_value="">4d018084f86f4f3fb41cba011a68f0f9</sys_scope_delete>
+        <sys_update_name>sys_script_include_2bd61e6883db5210889d5e20ceaad3a0</sys_update_name>
+        <sys_update_version display_value="sys_script_include_2bd61e6883db5210889d5e20ceaad3a0">1ab3cc4183971210889d5e20ceaad359</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:25:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

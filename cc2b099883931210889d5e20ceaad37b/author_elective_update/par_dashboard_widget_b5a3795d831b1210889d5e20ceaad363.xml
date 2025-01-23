@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">f96a5b2c83139210889d5e20ceaad354</canvas>
+        <component display_value="Pie">96abe7e38d8790718022c5630a92176c</component>
+        <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"colorConfig":{"type":"default"},"newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Metric","sourceType":"table","tableOrViewName":"metric_instance","filterQuery":"definition.name=Refund TMA of Resolvers Groups","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","id":"ZEdGaWJHVnRaWFJ5YVdOZmFXNXpkR0Z1WTJVeE56TTNOall4TURjeU9UazExNzM3NjYxMDc0NDA1","aggregateFunction":"AVG","axisId":"primary","aggregateField":"duration","durationFormat":{"customFormat":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","groupByField":"value","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":null,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"ahri67n","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"id":"groupBy","value":[{"groupBy":[{"dataSource":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","groupByField":"value","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":null,"disableRanges":false}],"noDebounce":true,"propLabel":"Group by"}</component_props>
+        <h>12</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 19:40:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5a3795d831b1210889d5e20ceaad363</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>par_dashboard_widget_b5a3795d831b1210889d5e20ceaad363</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:09:49</sys_updated_on>
+        <visualization/>
+        <w>11</w>
+        <widget_props/>
+        <x>18</x>
+        <y>12</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</application>
+        <file_path/>
+        <instance_id>f5cdcc2bdbb84e98ebdd2a5913961933</instance_id>
+        <instance_name>dev241981</instance_name>
+        <name>par_dashboard_widget_b5a3795d831b1210889d5e20ceaad363</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">f96a5b2c83139210889d5e20ceaad354</canvas><component display_value="Pie">96abe7e38d8790718022c5630a92176c</component><component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","showDataLabels":false,"dataLabelsType":"both","truncationType":"end","showRegister":true,"registerPosition":"bottom","registerOrientation":"horizontal","showRegisterOnSameLine":false,"showRegisterValue":false,"legendHorizontalAlignment":"center","legendExpandToFit":false,"showRegisterPercentage":false,"colorConfig":{"type":"default"},"newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Metric","sourceType":"table","tableOrViewName":"metric_instance","filterQuery":"definition.name=Refund TMA of Resolvers Groups","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","id":"ZEdGaWJHVnRaWFJ5YVdOZmFXNXpkR0Z1WTJVeE56TTNOall4TURjeU9UazExNzM3NjYxMDc0NDA1","aggregateFunction":"AVG","axisId":"primary","aggregateField":"duration","durationFormat":{"customFormat":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","groupByField":"value","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":null,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"ahri67n","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":false,"period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"id":"groupBy","value":[{"groupBy":[{"dataSource":"dGFibGVtZXRyaWNfaW5zdGFuY2UxNzM3NjYxMDcyOTk1","groupByField":"value","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":"ALL","numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"hideZeroValues":null,"disableRanges":false}],"noDebounce":true,"propLabel":"Group by"}</component_props><h>12</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-23 19:40:36</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b5a3795d831b1210889d5e20ceaad363</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package><sys_policy/><sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope><sys_update_name>par_dashboard_widget_b5a3795d831b1210889d5e20ceaad363</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-23 20:09:49</sys_updated_on><visualization/><w>11</w><widget_props/><x>18</x><y>12</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>1002222155</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ecbf01dc83931210889d5e20ceaad3e1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:09:50</sys_created_on>
+        <sys_id>3d5ab5d5835b1210889d5e20ceaad382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19494c906c60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:09:50</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>b15ab5d5f35b12106b19bf51270de082</update_guid>
+        <update_guid_history>b15ab5d5f35b12106b19bf51270de082:1002222155,3da3795db31b1210bee4816490d80d65:361334474</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">867ff59d835b1210889d5e20ceaad3b5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:32:14</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>7d5be74697af48d8859fbc380b1e6c90</sys_id>
+        <sys_metadata>b5a3795d831b1210889d5e20ceaad363</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_scope_delete display_value="">4d018084f86f4f3fb41cba011a68f0f9</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_b5a3795d831b1210889d5e20ceaad363</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_b5a3795d831b1210889d5e20ceaad363">3d5ab5d5835b1210889d5e20ceaad382</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:32:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
