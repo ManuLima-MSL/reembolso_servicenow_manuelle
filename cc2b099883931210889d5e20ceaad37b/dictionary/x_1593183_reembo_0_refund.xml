@@ -2,8 +2,15 @@
     <element db_object_id="8d3d815c83931210889d5e20ceaad306" extends="task" label="Refund" max_length="40" name="x_1593183_reembo_0_refund" type="collection">
         <element label="Refund Amount" max_length="20" name="refund_amount" type="currency"/>
         <element label="Reproval Reason" max_length="4000" name="reproval_reason" type="string"/>
+        <element label="Integration Error Message" max_length="250" name="integration_error_message" type="string"/>
         <element label="USD Refund" max_length="40" name="usd_refund" type="float"/>
         <element label="Category" max_length="32" name="category" reference="x_1593183_reembo_0_categories" type="reference"/>
         <element label="Date" max_length="40" name="date" type="glide_date_time"/>
+        <element choice="1" label="Integration Status" max_length="40" name="integration_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Failure" sequence="2" value="4"/>
+                <element inactive_on_update="false" label="Success" sequence="1" value="3"/>
+            </choice>
+        </element>
     </element>
 </database>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="x_1593183_reembo_0.refund_requester" name="x_1593183_reembo_0.refund_requester">882b099883931210889d5e20ceaad3ac</contains>
+        <role display_value="x_1593183_reembo_0.hr_resolver" name="x_1593183_reembo_0.hr_resolver">082b099883931210889d5e20ceaad39b</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:23:39</sys_created_on>
+        <sys_id>cef621ad83531210889d5e20ceaad3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593183_reembo_0.refund_requester.x_1593183_reembo_0.hr_resolver</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_update_name>sys_user_role_contains_cef621ad83531210889d5e20ceaad3df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:23:39</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</application>
+        <file_path/>
+        <instance_id>f5cdcc2bdbb84e98ebdd2a5913961933</instance_id>
+        <instance_name>dev241981</instance_name>
+        <name>sys_user_role_contains_cef621ad83531210889d5e20ceaad3df</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="x_1593183_reembo_0.refund_requester" name="x_1593183_reembo_0.refund_requester">882b099883931210889d5e20ceaad3ac</contains><role display_value="x_1593183_reembo_0.hr_resolver" name="x_1593183_reembo_0.hr_resolver">082b099883931210889d5e20ceaad39b</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-24 13:23:39</sys_created_on><sys_id>cef621ad83531210889d5e20ceaad3df</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1593183_reembo_0.refund_requester.x_1593183_reembo_0.hr_resolver</sys_name><sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package><sys_policy/><sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope><sys_update_name>sys_user_role_contains_cef621ad83531210889d5e20ceaad3df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-24 13:23:39</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>-366133444</payload_hash>
+        <record_name>x_1593183_reembo_0.refund_requester.x_1593183_reembo_0.hr_resolver</record_name>
+        <reverted_from/>
+        <source>ecbf01dc83931210889d5e20ceaad3e1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:23:40</sys_created_on>
+        <sys_id>8af661ad83531210889d5e20ceaad3d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194987b87cb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:23:40</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>8ef661add05312104af0910019e526d2</update_guid>
+        <update_guid_history>8ef661add05312104af0910019e526d2:-366133444</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:24:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>065d4521ea804fdfaa99d476cfb5d2a1</sys_id>
+        <sys_metadata>cef621ad83531210889d5e20ceaad3df</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1593183_reembo_0.refund_requester.x_1593183_reembo_0.hr_resolver</sys_name>
+        <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
+        <sys_scope_delete display_value="">4d018084f86f4f3fb41cba011a68f0f9</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_cef621ad83531210889d5e20ceaad3df</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_cef621ad83531210889d5e20ceaad3df">8af661ad83531210889d5e20ceaad3d3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:24:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
