@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-24 13:00:13</sys_created_on>
-        <sys_id>cc91a1a583531210889d5e20ceaad31c</sys_id>
+        <sys_created_on>2025-01-24 16:02:18</sys_created_on>
+        <sys_id>6b3b826983171210889d5e20ceaad3f4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>.x_1593183_reembo_0.hr_resolver</sys_name>
         <sys_package display_value="Reembolso" source="x_1593183_reembo_0">cc2b099883931210889d5e20ceaad37b</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reembolso">cc2b099883931210889d5e20ceaad37b</sys_scope>
-        <sys_security_acl display_value="sysapproval_approver">ee61a96583531210889d5e20ceaad3de</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_cc91a1a583531210889d5e20ceaad31c</sys_update_name>
+        <sys_security_acl display_value="contract_sla">bc0b026983171210889d5e20ceaad3d3</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6b3b826983171210889d5e20ceaad3f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-24 13:00:13</sys_updated_on>
+        <sys_updated_on>2025-01-24 16:02:18</sys_updated_on>
         <sys_user_role display_value="x_1593183_reembo_0.hr_resolver" name="x_1593183_reembo_0.hr_resolver">082b099883931210889d5e20ceaad39b</sys_user_role>
     </sys_security_acl_role>
 </record_update>
